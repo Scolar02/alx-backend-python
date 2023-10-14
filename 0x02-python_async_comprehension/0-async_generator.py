@@ -10,6 +10,6 @@ async def async_generator() -> Generator[float, None, None]:
     Returns:
         Generator[float, None, None]: A generator yielding random floating-point numbers.
     """
-    for _ in range(10):
+    for i in range(10):
         await asyncio.sleep(1)
         yield random.uniform(0, 10)
